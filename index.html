@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>title</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="Hexlet.js?v=1"></script>
+  <script src="codemu.js?v=2"></script>
+  <script src="stepik.js?v=1"></script>
+</head>
+ <body>
+  <div data-say-hi="yes">Привет</div>
+  <!-- <ul>
+    <li>Корчи</li>
+    <li>Йончи</li>
+  </ul> -->
+  <ul>
+    <li>Пункт 1</li>
+    <li>Пункт 2</li>
+  </ul>
+
+  <div class="like"></div>
+  <div class="subscribe"></div>
+  <div class="like subscribe"></div>
+  <div class="kpss"><img class="kpss" src="https://img06.rl0.ru/afisha/e1000x500i/daily.afisha.ru/uploads/images/4/e1/4e196b8e5d84d2940c43bacc3d4db40b.jpg" alt="slavik"></div>
+
+  <script>let arr = [1, 3, 3, 7]
+
+    for (let elem of arr) {
+          document.writeln(elem)
+    }
+    // 1
+    let test = document.querySelector('[data-say-hi]')
+    console.log(test.getAttribute('data-say-hi'))
+    // 2
+    let listItems = document.querySelectorAll('li')
+    secondItem = listItems[1].textContent
+    console.log(secondItem)
+    // 3
+    let listOfItems = document.querySelectorAll('.like')
+    console.log(listOfItems)
+    // 4
+
+    const list = document.querySelector('ul');
+    list.insertAdjacentHTML('beforeend', '<li>Текст</li>');
+    const originalDiv = document.getElementsByClassName('kpss')[0];
+    if (originalDiv) {
+    const clonedDiv = originalDiv.cloneNode(true);
+    originalDiv.parentNode.appendChild(clonedDiv);
+}
+const block = document
+console.log(block)
+const getScrollBarWidth = block.cliendWidth
+console.log(getScrollBarWidth)
+    </script>
+
+</body> 
+</html>
